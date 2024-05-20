@@ -1,0 +1,130 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.player {
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.song-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.audio-player {
+  display: none; /* Hide default audio controls */
+}
+
+.progress-bar-wrapper {
+  position: relative;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  appearance: none;
+  background-color: #404040;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: #404040;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: #1db954;
+}
+
+.time-info {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+.current-time {
+  margin-right: auto;
+}
+
+.duration {
+  margin-left: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.controls button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button:hover {
+  color: #1db954;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer p {
+  color: #b3b3b3;
+}

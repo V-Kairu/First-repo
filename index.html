@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MP3 Player</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="player">
+    <div class="song-info">
+      <img class="song-image" src="default_image.jpg" alt="Song Image">
+      <div class="song-details">
+        <div class="song-title">Song Title</div>
+        <div class="song-artist">Song Artist</div>
+      </div>
+    </div>
+    <audio class="audio-player" autoplay>
+      <source src="Mp3/Every Summertime.mp3" type="audio/mpeg" data-title="Every Summertime" data-artist="Nikki" data-image="AlbumArt/everysummertime.jpeg">
+      <source src="Mp3/Everytime.mp3" type="audio/mpeg" data-title="Everytime" data-artist="Boy Pablo" data-image="AlbumArt/boypablo.jpeg">
+      <source src="Mp3/On Melancholy Hill.mp3" type="audio/mpeg" data-title="On Melancholy Hill" data-artist="Gorillaz" data-image="AlbumArt/onmelancholyhill.jpeg">
+      <source src="Mp3/Raining In Manila.mp3" type="audio/mpeg" data-title="Raining In Manila" data-artist="Lola Amour" data-image="AlbumArt/raininginmanila.jpeg">
+      <source src="Mp3/seasons.mp3" type="audio/mpeg" data-title="seasons" data-artist="wave to earth" data-image="AlbumArt/seasons.jpeg">
+      <source src="Mp3/Vacation.mp3" type="audio/mpeg" data-title="Vacation" data-artist="Durdn" data-image="AlbumArt/vacation.jpeg">
+      <source src="Mp3/wtf.mp3" type="audio/mpeg" data-title="wtf" data-artist="Durdn" data-image="AlbumArt/boypablo.jpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar-wrapper">
+      <progress class="progress-bar" value="0" max="100"></progress>
+      <div class="time-info">
+        <span class="current-time">0:00</span>
+        <span class="duration">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="back-button"><i class="fas fa-backward"></i></button>
+      <button class="play-pause-button"><i class="fas fa-play"></i></button>
+      <button class="next-button"><i class="fas fa-forward"></i></button>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p>Created By Venz</p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
