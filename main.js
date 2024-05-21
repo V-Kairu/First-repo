@@ -76,6 +76,14 @@ window.onload = function() {
     songTitleElement.textContent = title;
     songArtistElement.textContent = artist;
     songImageElement.src = image;
+
+    if (!isNaN(audioPlayer.duration)) {
+      durationElement.textContent = formatTime(audioPlayer.duration;
+    }else{
+      audioPlayer.addEventListener('loadmetadata', function() {
+        durationElement.textContent = formatTime(audioPlayer.duration);
+      },{once: true});
+    }
   }
 
   function formatTime(time) {
