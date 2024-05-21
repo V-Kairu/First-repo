@@ -78,11 +78,11 @@ window.onload = function() {
     songImageElement.src = image;
 
     if (!isNaN(audioPlayer.duration)) {
-      durationElement.textContent = formatTime(audioPlayer.duration;
-    }else{
-      audioPlayer.addEventListener('loadmetadata', function() {
-        durationElement.textContent = formatTime(audioPlayer.duration);
-      },{once: true});
+    durationElement.textContent = formatTime(audioPlayer.duration);
+  } else {
+    audioPlayer.addEventListener('loadedmetadata', function() {
+      durationElement.textContent = formatTime(audioPlayer.duration);
+    }, { once: true });
     }
   }
 
